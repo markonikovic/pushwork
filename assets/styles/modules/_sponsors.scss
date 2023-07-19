@@ -1,0 +1,19 @@
+.sponsors {
+  height: 100px;
+  position:relative;
+  top:100px;
+  width: 100%;
+  background-color: #FAFAFC;
+
+  &__list {
+    float: right;
+
+    &__item {
+      float: left;
+      height: 50px;
+      padding: 25px 40px 0 0;
+      font-size: 40px;
+      color: $mainGray;
+    }
+  }
+}

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -44,5 +47,86 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.large-hero {
+  min-height: 350px;
+  background-color: #182032;
+  position: relative;
+  top: 100px;
+  padding: 80px;
+  color: white; }
+  .large-hero__title {
+    font-size: 40px;
+    max-width: 500px;
+    margin-bottom: 30px; }
+  .large-hero__description {
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 28px; }
+  .large-hero__button {
+    margin-top: 50px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px; }
+    .large-hero__button--order {
+      background-color: white;
+      color: #182032; }
+    .large-hero__button--account {
+      background-color: #182032;
+      color: white; }
+      .large-hero__button--account::before {
+        content: ">";
+        margin-right: 10px; }
+
+.header {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  background-color: #182032; }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+    padding: 20px 0 0 20px; }
+  .header__nav {
+    width: 50%;
+    float: right;
+    margin-top: 20px; }
+    .header__nav__list {
+      float: left; }
+      .header__nav__list__item {
+        float: left;
+        padding-top: 20px; }
+        .header__nav__list__item a {
+          text-decoration: none;
+          text-transform: uppercase;
+          padding-right: 20px;
+          color: white; }
+    .header__nav__button {
+      border-radius: 10px;
+      background-color: #353C4B;
+      float: left;
+      margin-top: 5px;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      border: none;
+      margin-right: 50px; }
+
+.sponsors {
+  height: 100px;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  background-color: #FAFAFC; }
+  .sponsors__list {
+    float: right; }
+    .sponsors__list__item {
+      float: left;
+      height: 50px;
+      padding: 25px 40px 0 0;
+      font-size: 40px;
+      color: #353C4B; }
 
 /*# sourceMappingURL=main.css.map */
